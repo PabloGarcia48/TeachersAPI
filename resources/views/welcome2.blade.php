@@ -103,7 +103,7 @@
     <div class="position-relative">
       <button class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-2 copy-btn" data-target="code1">Copiar</button>
       <pre><code id="code1" class="bg-light p-2 d-block">
-fetch('https://suaapi.com/carros')
+fetch('https://api-professores-main-2dg03s.laravel.cloud/api/carros')
   .then(res => res.json())
   .then(data => console.log(data))
   .catch(err => console.error(err));
@@ -115,15 +115,14 @@ fetch('https://suaapi.com/carros')
     <div class="position-relative">
       <button class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-2 copy-btn" data-target="code2">Copiar</button>
       <pre><code id="code2" class="bg-light p-2 d-block">
-fetch('https://suaapi.com/carros', {
+fetch('https://api-professores-main-2dg03s.laravel.cloud/api/carros', {
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
     modelo: "Gol",
-    marca: "Volkswagen",
-    ano: 2020
+    marca: "Volkswagen"
   })
 })
 .then(res => res.json())
@@ -137,15 +136,14 @@ fetch('https://suaapi.com/carros', {
     <div class="position-relative">
       <button class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-2 copy-btn" data-target="code3">Copiar</button>
       <pre><code id="code3" class="bg-light p-2 d-block">
-fetch('https://suaapi.com/carros/1', {
+fetch('https://api-professores-main-2dg03s.laravel.cloud/api/carros/1', {
   method: 'PUT',
   headers: {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
     modelo: "Gol G6",
-    marca: "Volkswagen",
-    ano: 2021
+    marca: "Volkswagen"
   })
 })
 .then(res => res.json())
@@ -159,7 +157,7 @@ fetch('https://suaapi.com/carros/1', {
     <div class="position-relative">
       <button class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-2 copy-btn" data-target="code4">Copiar</button>
       <pre><code id="code4" class="bg-light p-2 d-block">
-fetch('https://suaapi.com/carros/1', {
+fetch('https://api-professores-main-2dg03s.laravel.cloud/api/carros/1', {
   method: 'DELETE'
 })
 .then(res => res.json())
@@ -176,7 +174,7 @@ fetch('https://suaapi.com/carros/1', {
     <div class="position-relative">
       <button class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-2 copy-btn" data-target="code5">Copiar</button>
       <pre><code id="code5" class="bg-light p-2 d-block">
-axios.get('https://suaapi.com/carros')
+axios.get('https://api-professores-main-2dg03s.laravel.cloud/api/carros')
   .then(res => console.log(res.data))
   .catch(err => console.error(err));
       </code></pre>
@@ -187,10 +185,9 @@ axios.get('https://suaapi.com/carros')
     <div class="position-relative">
       <button class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-2 copy-btn" data-target="code6">Copiar</button>
       <pre><code id="code6" class="bg-light p-2 d-block">
-axios.post('https://suaapi.com/carros', {
+axios.post('https://api-professores-main-2dg03s.laravel.cloud/api/carros', {
   modelo: "Onix",
-  marca: "Chevrolet",
-  ano: 2022
+  marca: "Chevrolet"
 })
 .then(res => console.log(res.data))
 .catch(err => console.error(err));
@@ -202,10 +199,9 @@ axios.post('https://suaapi.com/carros', {
     <div class="position-relative">
       <button class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-2 copy-btn" data-target="code7">Copiar</button>
       <pre><code id="code7" class="bg-light p-2 d-block">
-axios.put('https://suaapi.com/carros/2', {
+axios.put('https://api-professores-main-2dg03s.laravel.cloud/api/carros/2', {
   modelo: "Onix Plus",
-  marca: "Chevrolet",
-  ano: 2023
+  marca: "Chevrolet"
 })
 .then(res => console.log(res.data))
 .catch(err => console.error(err));
@@ -217,7 +213,7 @@ axios.put('https://suaapi.com/carros/2', {
     <div class="position-relative">
       <button class="btn btn-sm btn-secondary position-absolute top-0 end-0 m-2 copy-btn" data-target="code8">Copiar</button>
       <pre><code id="code8" class="bg-light p-2 d-block">
-axios.delete('https://suaapi.com/carros/2')
+axios.delete('https://api-professores-main-2dg03s.laravel.cloud/api/carros/2')
   .then(res => console.log(res.data))
   .catch(err => console.error(err));
       </code></pre>
@@ -227,7 +223,7 @@ axios.delete('https://suaapi.com/carros/2')
   <!-- Rodapé -->
   <footer class="bg-dark text-white text-center py-4">
     <p>Feito com ❤️ para fins educacionais | Desenvolvido por Pablo Garcia</p>
-    <small>Contato: seuemail@exemplo.com</small>
+    <small>Contato: parobertodev@gmail.com</small>
   </footer>
 
   <!-- Scripts -->

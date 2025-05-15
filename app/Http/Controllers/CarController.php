@@ -125,7 +125,7 @@ class CarController extends Controller
 
             $car->delete();
 
-            return response()->json(['success' => true, 'msg' => "Carro $car->modelo excluído com sucesso"], 400);
+            return response()->json(['success' => true, 'msg' => "Carro $car->modelo excluído com sucesso"], 200);
 
         } catch (\Exception $error) {
             return response()->json(['success' => false, 'msg' => $error->getMessage()], 400);
