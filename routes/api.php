@@ -21,5 +21,10 @@ Route::get('/teste', function(Request $request){
     return response()->json(['success' => true, 'msg' => "Bem-vindo a API de Pablo lindão"]);
 
 });
+Route::get('/car', function(Request $request){
+
+    return response()->json(['success' => true, 'msg' => "ENTREI EM INGLES"]);
+
+});
 
 Route::resource('/carros', CarController::class);
