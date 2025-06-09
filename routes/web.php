@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome2');
 });
+
+Route::get('/samples', function () {
+    return view('samples');
+})->name('samples');

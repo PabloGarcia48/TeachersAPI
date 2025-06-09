@@ -6,16 +6,6 @@
   <title>API Educacional em Português</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<!-- Botão flutuante com tooltip -->
-<button
-  type="button"
-  class="btn btn-warning position-fixed bottom-0 end-0 m-4"
-  data-bs-toggle="modal"
-  data-bs-target="#pixModal"
-  title="Ajude a pagar um café para o desenvolvedor ☕"
->
-  ☕ Apoie
-</button>
 
 <!-- Modal Pix -->
 <div class="modal fade" id="pixModal" tabindex="-1" aria-labelledby="pixModalLabel" aria-hidden="true">
@@ -69,6 +59,11 @@
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td>Rota raiz: </td>
+          <td>https://api-professores-main-2dg03s.laravel.cloud/api</td>
+          <td>Adicione a cada endpoint esta rota raiz</td>
+        </tr>
         <tr>
           <td>GET</td>
           <td>/carros</td>
@@ -220,10 +215,39 @@ axios.delete('https://api-professores-main-2dg03s.laravel.cloud/api/carros/2')
     </div>
   </section>
 
+<!-- Espaço para o footer fixo (120px no mobile, 60px em telas maiores) -->
+<div class="d-block d-md-none" style="height: 120px;"></div>
+<div class="d-none d-md-block" style="height: 60px;"></div>
+
   <!-- Rodapé -->
-  <footer class="bg-dark text-white text-center py-4">
-    <p>Feito com ❤️ para fins educacionais | Desenvolvido por Pablo Garcia</p>
-    <small>Contato: pablorobertodev@gmail.com</small>
+  <footer class="bg-dark text-white py-3 px-4 position-fixed bottom-0 w-100">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <!-- Coluna dos botões -->
+        <div class="col-12 col-md-6 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start gap-3 flex-wrap">
+          <a href="{{ route('samples') }}" class="btn btn-outline-light btn-sm">
+            🧪 Testar Endpoints
+          </a>
+          <button
+            type="button"
+            class="btn btn-warning btn-sm"
+            data-bs-toggle="modal"
+            data-bs-target="#pixModal"
+            title="Ajude a pagar um café para o desenvolvedor ☕"
+          >
+            ☕ Apoie
+          </button>
+        </div>
+  
+        <!-- Coluna do texto -->
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <p class="mb-1">Feito com ❤️ para fins educacionais | Desenvolvido por Pablo Garcia</p>
+          <small>Contato: pablorobertodev@gmail.com</small>
+        </div>
+        
+      </div>
+    </div>
   </footer>
 
   <!-- Scripts -->
@@ -245,5 +269,6 @@ axios.delete('https://api-professores-main-2dg03s.laravel.cloud/api/carros/2')
       });
     });
   </script>
+
 </body>
 </html>
