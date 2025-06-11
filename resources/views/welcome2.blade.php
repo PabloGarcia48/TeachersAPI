@@ -90,7 +90,7 @@
 
   <!-- Exemplos de uso -->
   <section class="container my-5">
-    <h2>🧪 Exemplos com JavaScript</h2>
+    <h2>Exemplos com JavaScript</h2>
     <p>Use os exemplos abaixo para testar os métodos disponíveis da API.</p>
 
     <!-- Fetch GET -->
@@ -162,7 +162,7 @@ fetch('https://api-professores-main-2dg03s.laravel.cloud/api/carros/1', {
     </div>
 
     <hr>
-    <h3 class="mt-5 text-success">💡 CRUD com Axios</h3>
+    <h3 class="mt-5 text-success">CRUD com Axios</h3>
 
     <!-- Axios GET -->
     <h4 class="mt-4 text-success">🔍 GET - Buscar todos os carros (axios)</h4>
@@ -227,7 +227,7 @@ axios.delete('https://api-professores-main-2dg03s.laravel.cloud/api/carros/2')
         <!-- Coluna dos botões -->
         <div class="col-12 col-md-6 mb-3 mb-md-0 d-flex justify-content-center justify-content-md-start gap-3 flex-wrap">
           <a href="{{ route('samples') }}" class="btn btn-outline-light btn-sm">
-            🧪 Testar Endpoints
+            🔧 Testar Endpoints
           </a>
           <button
             type="button"
